@@ -1,7 +1,13 @@
+const switchBool = true;
+
 function Header() {
   return (
     <div>
-      <h1> Heder div içinde</h1>
+      <h1>
+        {" "}
+        Heder div içinde.
+        {switchBool && `Koşullu renderlama ${switchBool}`}
+      </h1>
     </div>
   );
 }
