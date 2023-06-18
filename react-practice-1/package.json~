@@ -4,9 +4,8 @@
   "description": "patika dev practice 1",
   "main": "index.js",
   "scripts": {
-	"start": "node index"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
   "author": "ibrahim",
   "license": "ISC",
   "dependencies": {
