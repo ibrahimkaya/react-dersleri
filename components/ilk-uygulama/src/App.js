@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/header";
 import React from "react";
 
-const jsDegiskeni = "ibrahim";
+const isLoggedIn = true;
 
 function App() {
   // React.createElement("div", null, "Hello");
@@ -13,7 +13,7 @@ function App() {
   // js keywordleri ile çakışmaası için label için for = htmlFor, yada className html için de kullanırken karışmaması için
   return (
     <>
-      <User name="ibrahim" surname="kaya" isLoggedIn={true}></User>
+      <User name="ibrahim" surname="kaya" isLoggedIn={isLoggedIn}></User>
     </>
   );
 }
