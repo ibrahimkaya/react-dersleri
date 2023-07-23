@@ -13,7 +13,12 @@ function App() {
   // js keywordleri ile çakışmaası için label için for = htmlFor, yada className html için de kullanırken karışmaması için
   return (
     <>
-      <User name="ibrahim" surname="kaya" isLoggedIn={isLoggedIn}></User>
+      <User
+        name="ibrahim"
+        surname="kaya"
+        isLoggedIn={isLoggedIn}
+        friends={["ahmet", "mehmet", "veli"]}
+      ></User>
     </>
   );
 }
