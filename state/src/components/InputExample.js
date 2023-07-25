@@ -1,16 +1,21 @@
 import { useState } from "react";
 
 function InputExample() {
-  const [name, setName] = useState("ibrahim");
+  const [form, setForm] = useState({ name: "", surname: "" });
 
+  const onChangeInput = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
   return (
     <div>
-      <h1>Please enter name</h1>
-      <div>{name}</div>
-      <input
-        value={name}
-        onChange={(event) => setName(event.target.value)}
-      ></input>
+      name
+      <br />
+      <input name="name" value={form.name} onChange={onChangeInput} />
+      <input name="surname" value={form.surname} onChange={onChangeInput} />
+      <br />
+      <br />
+      <br />
+      {form.name} {form.surname}
     </div>
   );
 }
